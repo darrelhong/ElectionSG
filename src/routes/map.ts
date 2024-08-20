@@ -1,5 +1,5 @@
 import maplibregl from 'maplibre-gl';
-import { positronMapStyle, datavizMapStyle } from '$lib/map-style';
+import { datavizMapStyle } from '$lib/map-style';
 import { selectedDivision } from '$lib/stores';
 
 export function initMap() {
@@ -75,6 +75,24 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 		data: '/boundaries/2020-labels.geojson'
 	});
 
+	const labelPaint = {
+		'text-color': '#1f2937',
+		'text-halo-color': '#e5e7eb',
+		'text-halo-width': 1
+	};
+
+	map.addLayer({
+		id: 'division-label-default-layer',
+		type: 'symbol',
+		source: 'division-label',
+		layout: {
+			'text-field': ['get', 'Name'],
+			'text-font': ['Metropolis Semi Bold'],
+			'text-size': 14
+		},
+		paint: labelPaint
+	});
+
 	map.addLayer({
 		id: 'division-label-layer',
 		type: 'symbol',
@@ -87,11 +105,7 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 			'text-allow-overlap': true,
 			visibility: 'none'
 		},
-		paint: {
-			'text-color': '#1f2937',
-			'text-halo-color': '#e5e7eb',
-			'text-halo-width': 1
-		}
+		paint: labelPaint
 	});
 
 	map.on('mousemove', 'division-fill-layer', (e) => {
@@ -99,11 +113,13 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 			const divisionId = e.features[0].id;
 			map.setFilter('division-label-layer', ['==', 'Name', divisionId]);
 			map.setLayoutProperty('division-label-layer', 'visibility', 'visible');
+			map.setLayoutProperty('division-label-default-layer', 'visibility', 'none');
 		}
 	});
 
 	map.on('mouseleave', 'division-fill-layer', () => {
 		map.setLayoutProperty('division-label-layer', 'visibility', 'none');
+		map.setLayoutProperty('division-label-default-layer', 'visibility', 'visible');
 	});
 }
 
