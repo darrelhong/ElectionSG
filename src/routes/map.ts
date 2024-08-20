@@ -66,3 +66,41 @@ export function addHoverFeatureState(map: maplibregl.Map) {
 		hoveredDivisionName = '';
 	});
 }
+
+export function addDivisionLabelOnHover(map: maplibregl.Map) {
+	map.addSource('division-label', {
+		type: 'geojson',
+		data: '/boundaries/2020-labels.geojson'
+	});
+
+	map.addLayer({
+		id: 'division-label-layer',
+		type: 'symbol',
+		source: 'division-label',
+		layout: {
+			'text-field': ['get', 'Name'],
+			'text-font': ['Metropolis Semi Bold'],
+			'text-size': 14,
+			// prevents label from fading in
+			'text-allow-overlap': true,
+			visibility: 'none'
+		},
+		paint: {
+			'text-color': '#1f2937',
+			'text-halo-color': '#e5e7eb',
+			'text-halo-width': 1
+		}
+	});
+
+	map.on('mousemove', 'boundary-fill', (e) => {
+		if (e?.features?.length && e.features.length > 0 && e.features[0].id) {
+			const divisionId = e.features[0].id;
+			map.setFilter('division-label-layer', ['==', 'Name', divisionId]);
+			map.setLayoutProperty('division-label-layer', 'visibility', 'visible');
+		}
+	});
+
+	map.on('mouseleave', 'boundary-fill', () => {
+		map.setLayoutProperty('division-label-layer', 'visibility', 'none');
+	});
+}

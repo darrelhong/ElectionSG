@@ -6,6 +6,7 @@
 		addBoundaryBorder,
 		addBoundaryFill,
 		addBoundarySource,
+		addDivisionLabelOnHover,
 		addHoverFeatureState,
 		initMap
 	} from './map';
@@ -25,6 +26,8 @@
 			addBoundaryBorder(map);
 
 			addHoverFeatureState(map);
+
+			addDivisionLabelOnHover(map);
 		});
 	});
 </script>
