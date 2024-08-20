@@ -33,7 +33,7 @@ export function addDivisionFill(map: maplibregl.Map) {
 		paint: {
 			'fill-color': '#088',
 			// set opacity based on feature state hover
-			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
+			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.8, 0.5]
 		}
 	});
 }
@@ -73,17 +73,17 @@ export function addHoverFeatureState(map: maplibregl.Map) {
 	});
 }
 
+const labelPaint = {
+	'text-color': '#1f2937',
+	'text-halo-color': '#e5e7eb',
+	'text-halo-width': 1
+};
+
 export function addDivisionLabelOnHover(map: maplibregl.Map) {
 	map.addSource('division-label', {
 		type: 'geojson',
 		data: '/boundaries/2020-labels.geojson'
 	});
-
-	const labelPaint = {
-		'text-color': '#1f2937',
-		'text-halo-color': '#e5e7eb',
-		'text-halo-width': 1
-	};
 
 	map.addLayer({
 		id: 'division-label-default-layer',
@@ -128,6 +128,38 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 }
 
 export function setSelectedDivisionOnClick(map: maplibregl.Map) {
+	map.addLayer({
+		id: 'selected-division-label-layer',
+		type: 'symbol',
+		source: 'division-label',
+		layout: {
+			'text-field': ['get', 'Name'],
+			'text-font': ['Metropolis Semi Bold'],
+			'text-size': 14,
+			'text-allow-overlap': true
+		},
+		paint: {
+			'text-color': '#e5e7eb',
+			'text-halo-color': '#1f2937',
+			'text-halo-width': 1
+		},
+		filter: ['==', 'Name', '']
+	});
+
+	map.addLayer(
+		{
+			id: 'selected-division-fill-layer',
+			type: 'fill',
+			source: 'boundary',
+			paint: {
+				'fill-color': '#088',
+				'fill-opacity': 0.95
+			},
+			filter: ['==', 'Name', '']
+		},
+		'division-label-default-layer'
+	);
+
 	map.on('click', 'division-fill-layer', (e) => {
 		e.preventDefault();
 		if (!e?.features?.length) return;
@@ -135,10 +167,15 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 
 		if (!feature.id) return;
 		selectedDivision.set(feature.id.toString());
+
+		map.setFilter('selected-division-fill-layer', ['==', 'Name', feature.id]);
+		map.setFilter('selected-division-label-layer', ['==', 'Name', feature.id]);
 	});
 
 	map.on('click', (e) => {
 		if (e._defaultPrevented) return;
 		selectedDivision.set(null);
+		map.setFilter('selected-division-fill-layer', ['==', 'Name', '']);
+		map.setFilter('selected-division-label-layer', ['==', 'Name', '']);
 	});
 }
