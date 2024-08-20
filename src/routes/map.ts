@@ -19,9 +19,9 @@ export function addBoundarySource(map: maplibregl.Map) {
 	});
 }
 
-export function addBoundaryFill(map: maplibregl.Map) {
+export function addDivisionFill(map: maplibregl.Map) {
 	map.addLayer({
-		id: 'boundary-fill',
+		id: 'division-fill-layer',
 		type: 'fill',
 		source: 'boundary',
 		paint: {
@@ -32,9 +32,9 @@ export function addBoundaryFill(map: maplibregl.Map) {
 	});
 }
 
-export function addBoundaryBorder(map: maplibregl.Map) {
+export function addDivisionBorder(map: maplibregl.Map) {
 	map.addLayer({
-		id: 'boundary-border',
+		id: 'division-border-layer',
 		type: 'line',
 		source: 'boundary',
 		layout: {},
@@ -49,7 +49,7 @@ export function addBoundaryBorder(map: maplibregl.Map) {
 export function addHoverFeatureState(map: maplibregl.Map) {
 	let hoveredDivisionName = '';
 
-	map.on('mousemove', 'boundary-fill', (e) => {
+	map.on('mousemove', 'division-fill-layer', (e) => {
 		if (e?.features?.length && e.features.length > 0) {
 			if (hoveredDivisionName) {
 				map.setFeatureState({ source: 'boundary', id: hoveredDivisionName }, { hover: false });
@@ -59,7 +59,7 @@ export function addHoverFeatureState(map: maplibregl.Map) {
 		}
 	});
 
-	map.on('mouseleave', 'boundary-fill', () => {
+	map.on('mouseleave', 'division-fill-layer', () => {
 		if (hoveredDivisionName) {
 			map.setFeatureState({ source: 'boundary', id: hoveredDivisionName }, { hover: false });
 		}
@@ -92,7 +92,7 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 		}
 	});
 
-	map.on('mousemove', 'boundary-fill', (e) => {
+	map.on('mousemove', 'division-fill-layer', (e) => {
 		if (e?.features?.length && e.features.length > 0 && e.features[0].id) {
 			const divisionId = e.features[0].id;
 			map.setFilter('division-label-layer', ['==', 'Name', divisionId]);
@@ -100,7 +100,7 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 		}
 	});
 
-	map.on('mouseleave', 'boundary-fill', () => {
+	map.on('mouseleave', 'division-fill-layer', () => {
 		map.setLayoutProperty('division-label-layer', 'visibility', 'none');
 	});
 }

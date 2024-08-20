@@ -3,8 +3,8 @@
 	import 'maplibre-gl/dist/maplibre-gl.css';
 	import { onMount } from 'svelte';
 	import {
-		addBoundaryBorder,
-		addBoundaryFill,
+		addDivisionBorder,
+		addDivisionFill,
 		addBoundarySource,
 		addDivisionLabelOnHover,
 		addHoverFeatureState,
@@ -21,9 +21,9 @@
 		map.on('load', () => {
 			addBoundarySource(map);
 
-			addBoundaryFill(map);
+			addDivisionFill(map);
 
-			addBoundaryBorder(map);
+			addDivisionBorder(map);
 
 			addHoverFeatureState(map);
 
