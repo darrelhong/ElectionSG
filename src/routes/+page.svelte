@@ -8,8 +8,10 @@
 		addBoundarySource,
 		addDivisionLabelOnHover,
 		addHoverFeatureState,
-		initMap
+		initMap,
+		setSelectedDivisionOnClick
 	} from './map';
+	import Info from './info.svelte';
 
 	let map: maplibregl.Map;
 
@@ -28,8 +30,11 @@
 			addHoverFeatureState(map);
 
 			addDivisionLabelOnHover(map);
+
+			setSelectedDivisionOnClick(map);
 		});
 	});
 </script>
 
 <div id="map" class="h-screen"></div>
+<Info />

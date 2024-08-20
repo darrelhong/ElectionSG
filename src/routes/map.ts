@@ -1,12 +1,14 @@
 import maplibregl from 'maplibre-gl';
 import { positronMapStyle, datavizMapStyle } from '$lib/map-style';
+import { selectedDivision } from '$lib/stores';
 
 export function initMap() {
 	return new maplibregl.Map({
 		container: 'map',
 		style: datavizMapStyle, // positronMapStyle
 		center: [103.809, 1.319],
-		zoom: 10
+		zoom: 10,
+		attributionControl: false
 	});
 }
 
@@ -102,5 +104,21 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 
 	map.on('mouseleave', 'division-fill-layer', () => {
 		map.setLayoutProperty('division-label-layer', 'visibility', 'none');
+	});
+}
+
+export function setSelectedDivisionOnClick(map: maplibregl.Map) {
+	map.on('click', 'division-fill-layer', (e) => {
+		e.preventDefault();
+		if (!e?.features?.length) return;
+		const feature = e.features[0];
+
+		if (!feature.id) return;
+		selectedDivision.set(feature.id.toString());
+	});
+
+	map.on('click', (e) => {
+		if (e._defaultPrevented) return;
+		selectedDivision.set(null);
 	});
 }
