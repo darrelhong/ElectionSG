@@ -1,61 +1,61 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"RADIN MAS","ED_CODE":"RM","ED_DESC":"RADIN MAS","FID":0,"Field_1":"RADIN MAS"},"geometry":{"type":"Point","coordinates":[103.81971,1.27656]}}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"Radin Mas","ED_CODE":"RM","ED_DESC":"RADIN MAS","FID":0,"Field_1":"RADIN MAS"},"geometry":{"type":"Point","coordinates":[103.81971,1.27656]}}
 ,
-{"type":"Feature","properties":{"Name":"MOUNTBATTEN","ED_CODE":"MB","ED_DESC":"MOUNTBATTEN","FID":1,"Field_1":"MOUNTBATTEN"},"geometry":{"type":"Point","coordinates":[103.888,1.29784]}}
+{"type":"Feature","properties":{"Name":"Mountbatten","ED_CODE":"MB","ED_DESC":"MOUNTBATTEN","FID":1,"Field_1":"MOUNTBATTEN"},"geometry":{"type":"Point","coordinates":[103.888,1.29784]}}
 ,
-{"type":"Feature","properties":{"Name":"TANJONG PAGAR","ED_CODE":"TP","ED_DESC":"TANJONG PAGAR","FID":2,"Field_1":"TANJONG PAGAR"},"geometry":{"type":"Point","coordinates":[103.82374,1.29904]}}
+{"type":"Feature","properties":{"Name":"Tanjong Pagar","ED_CODE":"TP","ED_DESC":"TANJONG PAGAR","FID":2,"Field_1":"TANJONG PAGAR"},"geometry":{"type":"Point","coordinates":[103.82374,1.29904]}}
 ,
-{"type":"Feature","properties":{"Name":"JALAN BESAR","ED_CODE":"JB","ED_DESC":"JALAN BESAR","FID":3,"Field_1":"JALAN BESAR"},"geometry":{"type":"Point","coordinates":[103.85448,1.29863]}}
+{"type":"Feature","properties":{"Name":"Jalan Besar","ED_CODE":"JB","ED_DESC":"JALAN BESAR","FID":3,"Field_1":"JALAN BESAR"},"geometry":{"type":"Point","coordinates":[103.85448,1.29863]}}
 ,
-{"type":"Feature","properties":{"Name":"MACPHERSON","ED_CODE":"MP","ED_DESC":"MACPHERSON","FID":4,"Field_1":"MACPHERSON"},"geometry":{"type":"Point","coordinates":[103.886,1.32405]}}
+{"type":"Feature","properties":{"Name":"Macpherson","ED_CODE":"MP","ED_DESC":"MACPHERSON","FID":4,"Field_1":"MACPHERSON"},"geometry":{"type":"Point","coordinates":[103.886,1.32405]}}
 ,
-{"type":"Feature","properties":{"Name":"PIONEER","ED_CODE":"PI","ED_DESC":"PIONEER","FID":5,"Field_1":"PIONEER"},"geometry":{"type":"Point","coordinates":[103.70077,1.33866]}}
+{"type":"Feature","properties":{"Name":"Pioneer","ED_CODE":"PI","ED_DESC":"PIONEER","FID":5,"Field_1":"PIONEER"},"geometry":{"type":"Point","coordinates":[103.70077,1.33866]}}
 ,
-{"type":"Feature","properties":{"Name":"POTONG PASIR","ED_CODE":"PS","ED_DESC":"POTONG PASIR","FID":6,"Field_1":"POTONG PASIR"},"geometry":{"type":"Point","coordinates":[103.87441,1.33399]}}
+{"type":"Feature","properties":{"Name":"Potong Pasir","ED_CODE":"PS","ED_DESC":"POTONG PASIR","FID":6,"Field_1":"POTONG PASIR"},"geometry":{"type":"Point","coordinates":[103.87441,1.33399]}}
 ,
-{"type":"Feature","properties":{"Name":"YUHUA","ED_CODE":"YH","ED_DESC":"YUHUA","FID":7,"Field_1":"YUHUA"},"geometry":{"type":"Point","coordinates":[103.73828,1.34004]}}
+{"type":"Feature","properties":{"Name":"Yuhua","ED_CODE":"YH","ED_DESC":"YUHUA","FID":7,"Field_1":"YUHUA"},"geometry":{"type":"Point","coordinates":[103.73828,1.34004]}}
 ,
-{"type":"Feature","properties":{"Name":"BUKIT BATOK","ED_CODE":"BK","ED_DESC":"BUKIT BATOK","FID":8,"Field_1":"BUKIT BATOK"},"geometry":{"type":"Point","coordinates":[103.74717,1.34733]}}
+{"type":"Feature","properties":{"Name":"Bukit Batok","ED_CODE":"BK","ED_DESC":"BUKIT BATOK","FID":8,"Field_1":"BUKIT BATOK"},"geometry":{"type":"Point","coordinates":[103.74717,1.34733]}}
 ,
-{"type":"Feature","properties":{"Name":"JURONG","ED_CODE":"JR","ED_DESC":"JURONG","FID":9,"Field_1":"JURONG"},"geometry":{"type":"Point","coordinates":[103.74815,1.33346]}}
+{"type":"Feature","properties":{"Name":"Jurong","ED_CODE":"JR","ED_DESC":"JURONG","FID":9,"Field_1":"JURONG"},"geometry":{"type":"Point","coordinates":[103.74815,1.33346]}}
 ,
-{"type":"Feature","properties":{"Name":"MARINE PARADE","ED_CODE":"MA","ED_DESC":"MARINE PARADE","FID":10,"Field_1":"MARINE PARADE"},"geometry":{"type":"Point","coordinates":[103.89798,1.32517]}}
+{"type":"Feature","properties":{"Name":"Marine Parade","ED_CODE":"MA","ED_DESC":"MARINE PARADE","FID":10,"Field_1":"MARINE PARADE"},"geometry":{"type":"Point","coordinates":[103.89798,1.32517]}}
 ,
-{"type":"Feature","properties":{"Name":"WEST COAST","ED_CODE":"WE","ED_DESC":"WEST COAST","FID":11,"Field_1":"WEST COAST"},"geometry":{"type":"Point","coordinates":[103.72039,1.25997]}}
+{"type":"Feature","properties":{"Name":"West Coast","ED_CODE":"WE","ED_DESC":"WEST COAST","FID":11,"Field_1":"WEST COAST"},"geometry":{"type":"Point","coordinates":[103.72039,1.25997]}}
 ,
-{"type":"Feature","properties":{"Name":"MARYMOUNT","ED_CODE":"MR","ED_DESC":"MARYMOUNT","FID":12,"Field_1":"MARYMOUNT"},"geometry":{"type":"Point","coordinates":[103.84261,1.35698]}}
+{"type":"Feature","properties":{"Name":"Marymount","ED_CODE":"MR","ED_DESC":"MARYMOUNT","FID":12,"Field_1":"MARYMOUNT"},"geometry":{"type":"Point","coordinates":[103.84261,1.35698]}}
 ,
-{"type":"Feature","properties":{"Name":"BISHAN-TOA PAYOH","ED_CODE":"BS","ED_DESC":"BISHAN-TOA PAYOH","FID":13,"Field_1":"BISHAN-TOA PAYOH"},"geometry":{"type":"Point","coordinates":[103.8327,1.34664]}}
+{"type":"Feature","properties":{"Name":"Bishan-Toa Payoh","ED_CODE":"BS","ED_DESC":"BISHAN-TOA PAYOH","FID":13,"Field_1":"BISHAN-TOA PAYOH"},"geometry":{"type":"Point","coordinates":[103.8327,1.34664]}}
 ,
-{"type":"Feature","properties":{"Name":"HOUGANG","ED_CODE":"HG","ED_DESC":"HOUGANG","FID":14,"Field_1":"HOUGANG"},"geometry":{"type":"Point","coordinates":[103.89483,1.36891]}}
+{"type":"Feature","properties":{"Name":"Hougang","ED_CODE":"HG","ED_DESC":"HOUGANG","FID":14,"Field_1":"HOUGANG"},"geometry":{"type":"Point","coordinates":[103.89483,1.36891]}}
 ,
-{"type":"Feature","properties":{"Name":"HONG KAH NORTH","ED_CODE":"HN","ED_DESC":"HONG KAH NORTH","FID":15,"Field_1":"HONG KAH NORTH"},"geometry":{"type":"Point","coordinates":[103.73112,1.36235]}}
+{"type":"Feature","properties":{"Name":"Hong Kah North","ED_CODE":"HN","ED_DESC":"HONG KAH NORTH","FID":15,"Field_1":"HONG KAH NORTH"},"geometry":{"type":"Point","coordinates":[103.73112,1.36235]}}
 ,
-{"type":"Feature","properties":{"Name":"TAMPINES","ED_CODE":"TM","ED_DESC":"TAMPINES","FID":16,"Field_1":"TAMPINES"},"geometry":{"type":"Point","coordinates":[103.93901,1.36012]}}
+{"type":"Feature","properties":{"Name":"Tampines","ED_CODE":"TM","ED_DESC":"TAMPINES","FID":16,"Field_1":"TAMPINES"},"geometry":{"type":"Point","coordinates":[103.93901,1.36012]}}
 ,
-{"type":"Feature","properties":{"Name":"ALJUNIED","ED_CODE":"AJ","ED_DESC":"ALJUNIED","FID":17,"Field_1":"ALJUNIED"},"geometry":{"type":"Point","coordinates":[103.8999,1.35496]}}
+{"type":"Feature","properties":{"Name":"Aljunied","ED_CODE":"AJ","ED_DESC":"ALJUNIED","FID":17,"Field_1":"ALJUNIED"},"geometry":{"type":"Point","coordinates":[103.8999,1.35496]}}
 ,
-{"type":"Feature","properties":{"Name":"BUKIT PANJANG","ED_CODE":"BP","ED_DESC":"BUKIT PANJANG","FID":18,"Field_1":"BUKIT PANJANG"},"geometry":{"type":"Point","coordinates":[103.77283,1.37602]}}
+{"type":"Feature","properties":{"Name":"Bukit Panjang","ED_CODE":"BP","ED_DESC":"BUKIT PANJANG","FID":18,"Field_1":"BUKIT PANJANG"},"geometry":{"type":"Point","coordinates":[103.77283,1.37602]}}
 ,
-{"type":"Feature","properties":{"Name":"YIO CHU KANG","ED_CODE":"YK","ED_DESC":"YIO CHU KANG","FID":19,"Field_1":"YIO CHU KANG"},"geometry":{"type":"Point","coordinates":[103.83821,1.38282]}}
+{"type":"Feature","properties":{"Name":"Yio Chu Kang","ED_CODE":"YK","ED_DESC":"YIO CHU KANG","FID":19,"Field_1":"YIO CHU KANG"},"geometry":{"type":"Point","coordinates":[103.83821,1.38282]}}
 ,
-{"type":"Feature","properties":{"Name":"SENGKANG","ED_CODE":"SK","ED_DESC":"SENGKANG","FID":20,"Field_1":"SENGKANG"},"geometry":{"type":"Point","coordinates":[103.89669,1.38973]}}
+{"type":"Feature","properties":{"Name":"Sengkang","ED_CODE":"SK","ED_DESC":"SENGKANG","FID":20,"Field_1":"SENGKANG"},"geometry":{"type":"Point","coordinates":[103.89669,1.38973]}}
 ,
-{"type":"Feature","properties":{"Name":"KEBUN BARU","ED_CODE":"KR","ED_DESC":"KEBUN BARU","FID":21,"Field_1":"KEBUN BARU"},"geometry":{"type":"Point","coordinates":[103.82607,1.3819]}}
+{"type":"Feature","properties":{"Name":"Kebun Baru","ED_CODE":"KR","ED_DESC":"KEBUN BARU","FID":21,"Field_1":"KEBUN BARU"},"geometry":{"type":"Point","coordinates":[103.82607,1.3819]}}
 ,
-{"type":"Feature","properties":{"Name":"PUNGGOL WEST","ED_CODE":"PW","ED_DESC":"PUNGGOL WEST","FID":22,"Field_1":"PUNGGOL WEST"},"geometry":{"type":"Point","coordinates":[103.89605,1.40373]}}
+{"type":"Feature","properties":{"Name":"Punggol West","ED_CODE":"PW","ED_DESC":"PUNGGOL WEST","FID":22,"Field_1":"PUNGGOL WEST"},"geometry":{"type":"Point","coordinates":[103.89605,1.40373]}}
 ,
-{"type":"Feature","properties":{"Name":"HOLLAND-BUKIT TIMAH","ED_CODE":"HT","ED_DESC":"HOLLAND-BUKIT TIMAH","FID":23,"Field_1":"HOLLAND-BUKIT TIMAH"},"geometry":{"type":"Point","coordinates":[103.78929,1.36193]}}
+{"type":"Feature","properties":{"Name":"Holland-Bukit Timah","ED_CODE":"HT","ED_DESC":"HOLLAND-BUKIT TIMAH","FID":23,"Field_1":"HOLLAND-BUKIT TIMAH"},"geometry":{"type":"Point","coordinates":[103.78929,1.36193]}}
 ,
-{"type":"Feature","properties":{"Name":"PASIR RIS-PUNGGOL","ED_CODE":"PN","ED_DESC":"PASIR RIS-PUNGGOL","FID":24,"Field_1":"PASIR RIS-PUNGGOL"},"geometry":{"type":"Point","coordinates":[103.93335,1.39077]}}
+{"type":"Feature","properties":{"Name":"Pasir Ris-Punggol","ED_CODE":"PN","ED_DESC":"PASIR RIS-PUNGGOL","FID":24,"Field_1":"PASIR RIS-PUNGGOL"},"geometry":{"type":"Point","coordinates":[103.93335,1.39077]}}
 ,
-{"type":"Feature","properties":{"Name":"EAST COAST","ED_CODE":"EC","ED_DESC":"EAST COAST","FID":25,"Field_1":"EAST COAST"},"geometry":{"type":"Point","coordinates":[104.00115,1.37195]}}
+{"type":"Feature","properties":{"Name":"East Coast","ED_CODE":"EC","ED_DESC":"EAST COAST","FID":25,"Field_1":"EAST COAST"},"geometry":{"type":"Point","coordinates":[104.00115,1.37195]}}
 ,
-{"type":"Feature","properties":{"Name":"ANG MO KIO","ED_CODE":"AM","ED_DESC":"ANG MO KIO","FID":26,"Field_1":"ANG MO KIO"},"geometry":{"type":"Point","coordinates":[103.86796,1.39274]}}
+{"type":"Feature","properties":{"Name":"Ang Mo Kio","ED_CODE":"AM","ED_DESC":"ANG MO KIO","FID":26,"Field_1":"ANG MO KIO"},"geometry":{"type":"Point","coordinates":[103.86796,1.39274]}}
 ,
-{"type":"Feature","properties":{"Name":"MARSILING-YEW TEE","ED_CODE":"MY","ED_DESC":"MARSILING-YEW TEE","FID":27,"Field_1":"MARSILING-YEW TEE"},"geometry":{"type":"Point","coordinates":[103.76626,1.4214]}}
+{"type":"Feature","properties":{"Name":"Marsiling-Yew Tee","ED_CODE":"MY","ED_DESC":"MARSILING-YEW TEE","FID":27,"Field_1":"MARSILING-YEW TEE"},"geometry":{"type":"Point","coordinates":[103.76626,1.4214]}}
 ,
-{"type":"Feature","properties":{"Name":"CHUA CHU KANG","ED_CODE":"CK","ED_DESC":"CHUA CHU KANG","FID":28,"Field_1":"CHUA CHU KANG"},"geometry":{"type":"Point","coordinates":[103.70753,1.38791]}}
+{"type":"Feature","properties":{"Name":"Chua Chu Kang","ED_CODE":"CK","ED_DESC":"CHUA CHU KANG","FID":28,"Field_1":"CHUA CHU KANG"},"geometry":{"type":"Point","coordinates":[103.70753,1.38791]}}
 ,
-{"type":"Feature","properties":{"Name":"NEE SOON","ED_CODE":"NS","ED_DESC":"NEE SOON","FID":29,"Field_1":"NEE SOON"},"geometry":{"type":"Point","coordinates":[103.83144,1.42528]}}
+{"type":"Feature","properties":{"Name":"Nee Soon","ED_CODE":"NS","ED_DESC":"NEE SOON","FID":29,"Field_1":"NEE SOON"},"geometry":{"type":"Point","coordinates":[103.83144,1.42528]}}
 ,
-{"type":"Feature","properties":{"Name":"SEMBAWANG","ED_CODE":"SB","ED_DESC":"SEMBAWANG","FID":30,"Field_1":"SEMBAWANG"},"geometry":{"type":"Point","coordinates":[103.80692,1.44892]}}]}
+{"type":"Feature","properties":{"Name":"Sembawang","ED_CODE":"SB","ED_DESC":"SEMBAWANG","FID":30,"Field_1":"SEMBAWANG"},"geometry":{"type":"Point","coordinates":[103.80692,1.44892]}}]}
