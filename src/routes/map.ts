@@ -8,7 +8,11 @@ export function initMap() {
 		style: datavizMapStyle, // positronMapStyle
 		center: [103.809, 1.319],
 		zoom: 10,
-		attributionControl: false
+		attributionControl: false,
+		maxBounds: [
+			[103.52, 0.93],
+			[104.15, 1.73]
+		]
 	});
 }
 

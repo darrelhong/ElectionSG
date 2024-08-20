@@ -36,5 +36,5 @@
 	});
 </script>
 
-<div id="map" class="h-screen"></div>
+<div id="map" class="h-dvh"></div>
 <Info />
