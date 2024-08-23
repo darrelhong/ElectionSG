@@ -14,6 +14,8 @@
 		"gen:polygon-labels": "geojson-polygon-labels --label=center-of-mass --style=combine"
 	},
 	"devDependencies": {
+		"@melt-ui/pp": "^0.3.2",
+		"@melt-ui/svelte": "^0.83.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -38,6 +40,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
 		"maplibre-gl": "^4.5.2"
 	}
