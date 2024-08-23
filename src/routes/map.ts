@@ -1,6 +1,8 @@
 import maplibregl from 'maplibre-gl';
 import { datavizMapStyle } from '$lib/map-style';
 import { selectedDivision } from '$lib/stores';
+import geojson2020 from '$lib/boundaries/2020.json';
+import geojson2020labels from '$lib/boundaries/2020-labels.json';
 
 export function initMap() {
 	return new maplibregl.Map({
@@ -16,10 +18,19 @@ export function initMap() {
 	});
 }
 
+const BOUNDARY_SOURCE = 'boundary';
+const DIVISION_FILL_LAYER = 'division-fill-layer';
+const DIVISION_BORDER_LAYER = 'division-border-layer';
+const DIVISION_LABEL_SOURCE = 'division-label-source';
+const DIVISION_LABEL_LAYER = 'division-label-layer';
+const DIVISION_LABEL_DEFAULT_LAYER = 'division-label-default-layer';
+const SELECTED_DIVISION_FILL_LAYER = 'selected-division-fill-layer';
+const SELECTED_DIVISION_LABEL_LAYER = 'selected-division-label-layer';
+
 export function addBoundarySource(map: maplibregl.Map) {
-	map.addSource('boundary', {
+	map.addSource(BOUNDARY_SOURCE, {
 		type: 'geojson',
-		data: '/boundaries/2020.geojson',
+		data: geojson2020 as GeoJSON.GeoJSON,
 		// use properties.Name as the feature id
 		promoteId: 'Name'
 	});
@@ -27,9 +38,9 @@ export function addBoundarySource(map: maplibregl.Map) {
 
 export function addDivisionFill(map: maplibregl.Map) {
 	map.addLayer({
-		id: 'division-fill-layer',
+		id: DIVISION_FILL_LAYER,
 		type: 'fill',
-		source: 'boundary',
+		source: BOUNDARY_SOURCE,
 		paint: {
 			'fill-color': '#088',
 			// set opacity based on feature state hover
@@ -40,9 +51,9 @@ export function addDivisionFill(map: maplibregl.Map) {
 
 export function addDivisionBorder(map: maplibregl.Map) {
 	map.addLayer({
-		id: 'division-border-layer',
+		id: DIVISION_BORDER_LAYER,
 		type: 'line',
-		source: 'boundary',
+		source: BOUNDARY_SOURCE,
 		layout: {},
 		paint: {
 			'line-color': '#088',
@@ -55,19 +66,19 @@ export function addDivisionBorder(map: maplibregl.Map) {
 export function addHoverFeatureState(map: maplibregl.Map) {
 	let hoveredDivisionName = '';
 
-	map.on('mousemove', 'division-fill-layer', (e) => {
+	map.on('mousemove', DIVISION_FILL_LAYER, (e) => {
 		if (e?.features?.length && e.features.length > 0) {
 			if (hoveredDivisionName) {
-				map.setFeatureState({ source: 'boundary', id: hoveredDivisionName }, { hover: false });
+				map.setFeatureState({ source: BOUNDARY_SOURCE, id: hoveredDivisionName }, { hover: false });
 			}
 			hoveredDivisionName = e.features[0].properties.Name;
-			map.setFeatureState({ source: 'boundary', id: hoveredDivisionName }, { hover: true });
+			map.setFeatureState({ source: BOUNDARY_SOURCE, id: hoveredDivisionName }, { hover: true });
 		}
 	});
 
-	map.on('mouseleave', 'division-fill-layer', () => {
+	map.on('mouseleave', DIVISION_FILL_LAYER, () => {
 		if (hoveredDivisionName) {
-			map.setFeatureState({ source: 'boundary', id: hoveredDivisionName }, { hover: false });
+			map.setFeatureState({ source: BOUNDARY_SOURCE, id: hoveredDivisionName }, { hover: false });
 		}
 		hoveredDivisionName = '';
 	});
@@ -80,15 +91,15 @@ const labelPaint = {
 };
 
 export function addDivisionLabelOnHover(map: maplibregl.Map) {
-	map.addSource('division-label', {
+	map.addSource(DIVISION_LABEL_SOURCE, {
 		type: 'geojson',
-		data: '/boundaries/2020-labels.geojson'
+		data: geojson2020labels as GeoJSON.GeoJSON
 	});
 
 	map.addLayer({
-		id: 'division-label-default-layer',
+		id: DIVISION_LABEL_DEFAULT_LAYER,
 		type: 'symbol',
-		source: 'division-label',
+		source: DIVISION_LABEL_SOURCE,
 		layout: {
 			'text-field': ['get', 'Name'],
 			'text-font': ['Metropolis Semi Bold'],
@@ -98,9 +109,9 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 	});
 
 	map.addLayer({
-		id: 'division-label-layer',
+		id: DIVISION_LABEL_LAYER,
 		type: 'symbol',
-		source: 'division-label',
+		source: DIVISION_LABEL_SOURCE,
 		layout: {
 			'text-field': ['get', 'Name'],
 			'text-font': ['Metropolis Semi Bold'],
@@ -112,26 +123,26 @@ export function addDivisionLabelOnHover(map: maplibregl.Map) {
 		paint: labelPaint
 	});
 
-	map.on('mousemove', 'division-fill-layer', (e) => {
+	map.on('mousemove', DIVISION_FILL_LAYER, (e) => {
 		if (e?.features?.length && e.features.length > 0 && e.features[0].id) {
 			const divisionId = e.features[0].id;
-			map.setFilter('division-label-layer', ['==', 'Name', divisionId]);
-			map.setLayoutProperty('division-label-layer', 'visibility', 'visible');
-			map.setLayoutProperty('division-label-default-layer', 'visibility', 'none');
+			map.setFilter(DIVISION_LABEL_LAYER, ['==', 'Name', divisionId]);
+			map.setLayoutProperty(DIVISION_LABEL_LAYER, 'visibility', 'visible');
+			map.setLayoutProperty(DIVISION_LABEL_DEFAULT_LAYER, 'visibility', 'none');
 		}
 	});
 
-	map.on('mouseleave', 'division-fill-layer', () => {
-		map.setLayoutProperty('division-label-layer', 'visibility', 'none');
-		map.setLayoutProperty('division-label-default-layer', 'visibility', 'visible');
+	map.on('mouseleave', DIVISION_FILL_LAYER, () => {
+		map.setLayoutProperty(DIVISION_LABEL_LAYER, 'visibility', 'none');
+		map.setLayoutProperty(DIVISION_LABEL_DEFAULT_LAYER, 'visibility', 'visible');
 	});
 }
 
 export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 	map.addLayer({
-		id: 'selected-division-label-layer',
+		id: SELECTED_DIVISION_LABEL_LAYER,
 		type: 'symbol',
-		source: 'division-label',
+		source: DIVISION_LABEL_SOURCE,
 		layout: {
 			'text-field': ['get', 'Name'],
 			'text-font': ['Metropolis Semi Bold'],
@@ -148,19 +159,19 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 
 	map.addLayer(
 		{
-			id: 'selected-division-fill-layer',
+			id: SELECTED_DIVISION_FILL_LAYER,
 			type: 'fill',
-			source: 'boundary',
+			source: BOUNDARY_SOURCE,
 			paint: {
 				'fill-color': '#088',
 				'fill-opacity': 0.95
 			},
 			filter: ['==', 'Name', '']
 		},
-		'division-label-default-layer'
+		DIVISION_LABEL_DEFAULT_LAYER
 	);
 
-	map.on('click', 'division-fill-layer', (e) => {
+	map.on('click', DIVISION_FILL_LAYER, (e) => {
 		e.preventDefault();
 		if (!e?.features?.length) return;
 		const feature = e.features[0];
@@ -168,14 +179,14 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 		if (!feature.id) return;
 		selectedDivision.set(feature.id.toString());
 
-		map.setFilter('selected-division-fill-layer', ['==', 'Name', feature.id]);
-		map.setFilter('selected-division-label-layer', ['==', 'Name', feature.id]);
+		map.setFilter(SELECTED_DIVISION_FILL_LAYER, ['==', 'Name', feature.id]);
+		map.setFilter(SELECTED_DIVISION_LABEL_LAYER, ['==', 'Name', feature.id]);
 	});
 
 	map.on('click', (e) => {
 		if (e._defaultPrevented) return;
 		selectedDivision.set(null);
-		map.setFilter('selected-division-fill-layer', ['==', 'Name', '']);
-		map.setFilter('selected-division-label-layer', ['==', 'Name', '']);
+		map.setFilter(SELECTED_DIVISION_FILL_LAYER, ['==', 'Name', '']);
+		map.setFilter(SELECTED_DIVISION_LABEL_LAYER, ['==', 'Name', '']);
 	});
 }
