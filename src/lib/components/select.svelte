@@ -1,17 +1,16 @@
 <script lang="ts">
-	import { selectedYearOption } from '$lib/stores';
-	import { createSelect, melt } from '@melt-ui/svelte';
+	import { type CreateSelectProps, createSelect, melt } from '@melt-ui/svelte';
 	import clsx from 'clsx';
 	import { fade } from 'svelte/transition';
+
+	export let createSelectOptions: CreateSelectProps;
+	export let items: string[];
+	export let placeholder: string;
 
 	const {
 		elements: { trigger, menu, option },
 		states: { selectedLabel, open }
-	} = createSelect<string>({
-		selected: selectedYearOption
-	});
-
-	const years = ['2015', '2020'];
+	} = createSelect(createSelectOptions);
 </script>
 
 <button
@@ -27,7 +26,7 @@
 		{ 'text-gray-600': !$selectedLabel }
 	)}
 >
-	{$selectedLabel || 'Select year'}
+	{$selectedLabel || placeholder}
 	<svg
 		class="ms-2"
 		width="15"
@@ -55,9 +54,9 @@
 			'p-1'
 		)}
 	>
-		{#each years as year}
+		{#each items as item}
 			<div
-				use:melt={$option({ value: year, label: year })}
+				use:melt={$option({ value: item, label: item })}
 				class={clsx(
 					'px-2 py-1',
 					'cursor-pointer',
@@ -66,7 +65,7 @@
 					'data-[disabled]:opacity-50'
 				)}
 			>
-				{year}
+				{item}
 			</div>
 		{/each}
 	</div>
