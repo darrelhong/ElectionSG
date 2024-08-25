@@ -44,7 +44,7 @@ export function addDivisionFill(map: maplibregl.Map) {
 		paint: {
 			'fill-color': '#088',
 			// set opacity based on feature state hover
-			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.8, 0.5]
+			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.3, 0.05]
 		}
 	});
 }
@@ -164,7 +164,7 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 			source: BOUNDARY_SOURCE,
 			paint: {
 				'fill-color': '#088',
-				'fill-opacity': 0.95
+				'fill-opacity': 0.4
 			},
 			filter: ['==', 'Name', '']
 		},
