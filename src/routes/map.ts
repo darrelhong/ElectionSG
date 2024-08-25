@@ -1,8 +1,8 @@
 import maplibregl from 'maplibre-gl';
 import { datavizMapStyle } from '$lib/map-style';
 import { selectedDivision } from '$lib/stores';
-import geojson2020 from '$lib/boundaries/2020.json';
-import geojson2020labels from '$lib/boundaries/2020-labels.json';
+import geojson2020 from '$lib/data/2020-boundaries.json';
+import geojson2020labels from '$lib/data/2020-labels.json';
 
 export function initMap() {
 	return new maplibregl.Map({
