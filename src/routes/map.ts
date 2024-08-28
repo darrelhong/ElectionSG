@@ -1,9 +1,10 @@
-import maplibregl from 'maplibre-gl';
+import maplibregl, { GeoJSONSource } from 'maplibre-gl';
 import { datavizMapStyle } from '$lib/map-style';
-import { selectedDivision } from '$lib/stores';
-import geojson2020 from '$lib/data/2020-boundaries.json';
-import geojson2020labels from '$lib/data/2020-labels.json';
-import { parsedResults2020 } from '$lib/parsed';
+import { selectedDivision, selectedYear } from '$lib/stores';
+
+import { getParsedResults } from '$lib/parsed';
+import { get } from 'svelte/store';
+import { getBoundaryJson, getLabelsJson } from '$lib/boundaries';
 
 export function initMap() {
 	return new maplibregl.Map({
@@ -31,7 +32,7 @@ const SELECTED_DIVISION_LABEL_LAYER = 'selected-division-label-layer';
 export function addBoundarySource(map: maplibregl.Map) {
 	map.addSource(BOUNDARY_SOURCE, {
 		type: 'geojson',
-		data: geojson2020 as GeoJSON.GeoJSON,
+		data: getBoundaryJson(get(selectedYear)),
 		// use properties.Name as the feature id
 		promoteId: 'Name'
 	});
@@ -43,7 +44,7 @@ export function addDivisionFill(map: maplibregl.Map) {
 		type: 'fill',
 		source: BOUNDARY_SOURCE,
 		paint: {
-			'fill-color': '#088',
+			'fill-color': '#000',
 			// set opacity based on feature state hover
 			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.3, 0]
 		}
@@ -94,7 +95,7 @@ const labelPaint = {
 export function addDivisionLabelOnHover(map: maplibregl.Map) {
 	map.addSource(DIVISION_LABEL_SOURCE, {
 		type: 'geojson',
-		data: geojson2020labels as GeoJSON.GeoJSON
+		data: getLabelsJson(get(selectedYear))
 	});
 
 	map.addLayer({
@@ -193,20 +194,7 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 }
 
 export function addResultFillLayer(map: maplibregl.Map) {
-	Object.entries(parsedResults2020).forEach(([divisionName, results]) => {
-		// PAP competes in all divisions
-		const incumbentResult = results.parties.find((party) => party.party === 'PAP');
-
-		map.setFeatureState(
-			{
-				source: BOUNDARY_SOURCE,
-				id: divisionName
-			},
-			{
-				incumbentVotePercentage: incumbentResult?.vote_percentage
-			}
-		);
-	});
+	mergeResultsWithFeatureState(map);
 
 	map.addLayer(
 		{
@@ -230,4 +218,34 @@ export function addResultFillLayer(map: maplibregl.Map) {
 		},
 		DIVISION_FILL_LAYER
 	);
+}
+
+export function switchDataSourceOnChange(map: maplibregl.Map) {
+	selectedYear.subscribe((year) => {
+		const boundarySource = map.getSource(BOUNDARY_SOURCE) as GeoJSONSource;
+		boundarySource.setData(getBoundaryJson(year));
+
+		const labelSource = map.getSource(DIVISION_LABEL_SOURCE) as GeoJSONSource;
+		labelSource.setData(getLabelsJson(year));
+
+		mergeResultsWithFeatureState(map);
+	});
+}
+
+export function mergeResultsWithFeatureState(map: maplibregl.Map) {
+	const results = getParsedResults(get(selectedYear));
+	Object.entries(results).forEach(([divisionName, results]) => {
+		// PAP competes in all divisions
+		const incumbentResult = results.parties.find((party) => party.party === 'PAP');
+
+		map.setFeatureState(
+			{
+				source: BOUNDARY_SOURCE,
+				id: divisionName
+			},
+			{
+				incumbentVotePercentage: incumbentResult?.vote_percentage
+			}
+		);
+	});
 }

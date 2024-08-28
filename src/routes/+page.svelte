@@ -10,7 +10,8 @@
 		addHoverFeatureState,
 		initMap,
 		setSelectedDivisionOnClick,
-		addResultFillLayer
+		addResultFillLayer,
+		switchDataSourceOnChange
 	} from './map';
 	import Info from './info.svelte';
 
@@ -35,6 +36,8 @@
 			setSelectedDivisionOnClick(map);
 
 			addResultFillLayer(map);
+
+			switchDataSourceOnChange(map);
 		});
 	});
 </script>
