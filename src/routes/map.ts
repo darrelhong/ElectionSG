@@ -44,7 +44,7 @@ export function addDivisionFill(map: maplibregl.Map) {
 		type: 'fill',
 		source: BOUNDARY_SOURCE,
 		paint: {
-			'fill-color': '#000',
+			'fill-color': '#088',
 			// set opacity based on feature state hover
 			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.3, 0]
 		}
