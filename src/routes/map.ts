@@ -179,6 +179,9 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 		const feature = e.features[0];
 
 		if (!feature.id) return;
+
+		if (map.getZoom() < 10) map.flyTo({ zoom: 10.1 });
+
 		selectedDivision.set(feature.id.toString());
 
 		map.setFilter(SELECTED_DIVISION_FILL_LAYER, ['==', 'Name', feature.id]);
