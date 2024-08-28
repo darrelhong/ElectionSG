@@ -54,7 +54,7 @@
 				</div>
 			{/each}
 		{:else}
-			<p>Select a constituency to continue</p>
+			<p>Select a constituency to view results</p>
 		{/if}
 
 		<Select
