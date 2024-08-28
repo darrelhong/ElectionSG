@@ -3,6 +3,7 @@ import { datavizMapStyle } from '$lib/map-style';
 import { selectedDivision } from '$lib/stores';
 import geojson2020 from '$lib/data/2020-boundaries.json';
 import geojson2020labels from '$lib/data/2020-labels.json';
+import { parsedResults2020 } from '$lib/parsed';
 
 export function initMap() {
 	return new maplibregl.Map({
@@ -44,7 +45,7 @@ export function addDivisionFill(map: maplibregl.Map) {
 		paint: {
 			'fill-color': '#088',
 			// set opacity based on feature state hover
-			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.3, 0.05]
+			'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.3, 0]
 		}
 	});
 }
@@ -189,4 +190,44 @@ export function setSelectedDivisionOnClick(map: maplibregl.Map) {
 		map.setFilter(SELECTED_DIVISION_FILL_LAYER, ['==', 'Name', '']);
 		map.setFilter(SELECTED_DIVISION_LABEL_LAYER, ['==', 'Name', '']);
 	});
+}
+
+export function addResultFillLayer(map: maplibregl.Map) {
+	Object.entries(parsedResults2020).forEach(([divisionName, results]) => {
+		// PAP competes in all divisions
+		const incumbentResult = results.parties.find((party) => party.party === 'PAP');
+
+		map.setFeatureState(
+			{
+				source: BOUNDARY_SOURCE,
+				id: divisionName
+			},
+			{
+				incumbentVotePercentage: incumbentResult?.vote_percentage
+			}
+		);
+	});
+
+	map.addLayer(
+		{
+			id: 'result-fill-layer',
+			type: 'fill',
+			source: BOUNDARY_SOURCE,
+			paint: {
+				'fill-color': [
+					'interpolate',
+					['linear'],
+					['feature-state', 'incumbentVotePercentage'],
+					0,
+					'#FF6600',
+					0.5,
+					'#ffffff',
+					1,
+					'#0099FF'
+				],
+				'fill-opacity': 0.6
+			}
+		},
+		DIVISION_FILL_LAYER
+	);
 }

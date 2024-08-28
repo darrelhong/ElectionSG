@@ -9,7 +9,8 @@
 		addDivisionLabelOnHover,
 		addHoverFeatureState,
 		initMap,
-		setSelectedDivisionOnClick
+		setSelectedDivisionOnClick,
+		addResultFillLayer
 	} from './map';
 	import Info from './info.svelte';
 
@@ -32,6 +33,8 @@
 			addDivisionLabelOnHover(map);
 
 			setSelectedDivisionOnClick(map);
+
+			addResultFillLayer(map);
 		});
 	});
 </script>

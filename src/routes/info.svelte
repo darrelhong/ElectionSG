@@ -1,11 +1,8 @@
 <script lang="ts">
 	import Select from '$lib/components/select.svelte';
 	import { selectedDivision, selectedYearOption } from '$lib/stores';
-	import results2020 from '$lib/data/2020-results.json';
-	import { Results } from '$lib/types/results';
-	import { parse } from 'svelte/compiler';
+	import { parsedResults2020 } from '$lib/parsed';
 
-	const parsedResults2020 = Results.parse(results2020);
 	$: divisionResults = $selectedDivision && parsedResults2020[$selectedDivision];
 </script>
 
