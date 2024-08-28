@@ -13,7 +13,7 @@ function toTitleCase(str) {
 }
 
 // Path to the GeoJSON file
-const filePath = path.join(__dirname, '2020.geojson');
+const filePath = path.join(__dirname, process.argv[2]);
 
 // Read the GeoJSON file
 fs.readFile(filePath, 'utf8', (err, data) => {
@@ -27,8 +27,8 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
 	// Iterate through each feature and update the Name property
 	geojson.features.forEach((feature) => {
-		if (feature.properties && feature.properties.Name) {
-			feature.properties.Name = toTitleCase(feature.properties.Name);
+		if (feature.properties && feature.properties.ED_DESC) {
+			feature.properties.Name = toTitleCase(feature.properties.ED_DESC);
 		}
 	});
 
