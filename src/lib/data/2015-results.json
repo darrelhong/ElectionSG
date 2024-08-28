@@ -1,0 +1,755 @@
+{
+    "Aljunied": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "WP",
+                "vote_count": 70050,
+                "vote_percentage": 0.5096,
+                "candidates": [
+                    "Chen Show Mao",
+                    "Sylvia Lim",
+                    "Low Thia Khiang",
+                    "Md Faisal Bin Abdul Manap",
+                    "Pritam Singh"
+                ]
+            },
+            {
+                "party": "PAP",
+                "vote_count": 67424,
+                "vote_percentage": 0.4904,
+                "candidates": [
+                    "Chau Eng Leong",
+                    "K Muralidharan Pillai",
+                    "Lye Thiam Fatt Joseph Victor",
+                    "Shamsul Kamar Bin Mohamed Razali",
+                    "Yeo Guat Kwang"
+                ]
+            }
+        ]
+    },
+    "Ang Mo Kio": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 135316,
+                "vote_percentage": 0.7864,
+                "candidates": [
+                    "Ang Hin Kee",
+                    "David Darryl Wilson",
+                    "Gan Thiam Poh",
+                    "Intan Azura Binte Mokhtar",
+                    "Koh Poh Koon",
+                    "Lee Hsien Loong"
+                ]
+            },
+            {
+                "party": "RP",
+                "vote_count": 36758,
+                "vote_percentage": 0.2136,
+                "candidates": [
+                    "Goh Keow Wah",
+                    "Jesse Loo Hoe Bock",
+                    "Roy Ngerng Yi Ling",
+                    "Osman Sulaiman",
+                    "M Ravi",
+                    "Siva Chandran"
+                ]
+            }
+        ]
+    },
+    "Bishan-Toa Payoh": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 86701,
+                "vote_percentage": 0.7359,
+                "candidates": [
+                    "Chee Hong Tat",
+                    "Chong Kee Hiong",
+                    "Ng Eng Hen",
+                    "Saktiandi Bin Supaat",
+                    "Josephine Teo"
+                ]
+            },
+            {
+                "party": "SPP",
+                "vote_count": 31108,
+                "vote_percentage": 0.2641,
+                "candidates": [
+                    "Law Kim Hwee",
+                    "Long YaoGuang, Don Bryan",
+                    "Mohamad Abdillah Bin Zamzuri",
+                    "Mohamad Hamim Bin Aliyas",
+                    "Pwee Yek Kwan Benjamin"
+                ]
+            }
+        ]
+    },
+    "Bukit Batok": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 18234,
+                "vote_percentage": 0.7302,
+                "candidates": [
+                    "David Ong Kim Huat"
+                ]
+            },
+            {
+                "party": "SDP",
+                "vote_count": 6588,
+                "vote_percentage": 0.2638,
+                "candidates": [
+                    "Sadasivam V"
+                ]
+            },
+            {
+                "party": "Independent",
+                "vote_count": 150,
+                "vote_percentage": 0.006,
+                "candidates": [
+                    "Samir Salim Neji"
+                ]
+            }
+        ]
+    },
+    "Bukit Panjang": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 21954,
+                "vote_percentage": 0.6838,
+                "candidates": [
+                    "Teo Ho Pin"
+                ]
+            },
+            {
+                "party": "SDP",
+                "vote_count": 10152,
+                "vote_percentage": 0.3162,
+                "candidates": [
+                    "Khung Wai Yeen"
+                ]
+            }
+        ]
+    },
+    "Chua Chu Kang": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 84850,
+                "vote_percentage": 0.7691,
+                "candidates": [
+                    "Gan Kim Yong",
+                    "Low Yen Ling",
+                    "Yee Chia Hsing",
+                    "Zaqy Mohamad"
+                ]
+            },
+            {
+                "party": "PPP",
+                "vote_count": 25475,
+                "vote_percentage": 0.2309,
+                "candidates": [
+                    "Goh Meng Seng",
+                    "Lee Tze Shih",
+                    "Low Wai Choo",
+                    "Syafarin Bin Sarif"
+                ]
+            }
+        ]
+    },
+    "East Coast": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 55093,
+                "vote_percentage": 0.6073,
+                "candidates": [
+                    "Lee Yi Shyan",
+                    "Lim Swee Say",
+                    "Mohd Maliki Bin Osman",
+                    "Tan Soon Neo Jessica"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 35622,
+                "vote_percentage": 0.3927,
+                "candidates": [
+                    "Gerald Giam Yean Song",
+                    "Daniel Goh Pei Siong",
+                    "Mohamed Fairoz Bin Shariff",
+                    "Leon Perera"
+                ]
+            }
+        ]
+    },
+    "Fengshan": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 12417,
+                "vote_percentage": 0.575,
+                "candidates": [
+                    "Cheryl Chan Wei Ling"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 9176,
+                "vote_percentage": 0.425,
+                "candidates": [
+                    "Dennis Tan Lip Fong"
+                ]
+            }
+        ]
+    },
+    "Holland-Bukit Timah": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 62786,
+                "vote_percentage": 0.666,
+                "candidates": [
+                    "Christopher De Souza",
+                    "Liang Eng Hwa",
+                    "Sim Ann",
+                    "Vivian Balakrishnan"
+                ]
+            },
+            {
+                "party": "SDP",
+                "vote_count": 31494,
+                "vote_percentage": 0.334,
+                "candidates": [
+                    "Chee Soon Juan",
+                    "Chong Wai Fung",
+                    "Md Sidek Bin Mallek",
+                    "Paul Anatharajah Tambyah"
+                ]
+            }
+        ]
+    },
+    "Hong Kah North": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 19628,
+                "vote_percentage": 0.7476,
+                "candidates": [
+                    "Amy Khor Lean Suan"
+                ]
+            },
+            {
+                "party": "SPP",
+                "vote_count": 6627,
+                "vote_percentage": 0.2524,
+                "candidates": [
+                    "Ravi Philemon"
+                ]
+            }
+        ]
+    },
+    "Hougang": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "WP",
+                "vote_count": 13027,
+                "vote_percentage": 0.5766,
+                "candidates": [
+                    "Png Eng Huat"
+                ]
+            },
+            {
+                "party": "PAP",
+                "vote_count": 9565,
+                "vote_percentage": 0.4234,
+                "candidates": [
+                    "Lee Hong Chuang"
+                ]
+            }
+        ]
+    },
+    "Jalan Besar": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 63644,
+                "vote_percentage": 0.6775,
+                "candidates": [
+                    "Heng Chee How",
+                    "Lily Neo",
+                    "Denise Phua Lay Peng",
+                    "Yaacob Ibrahim"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 30302,
+                "vote_percentage": 0.3225,
+                "candidates": [
+                    "Chan Sio Phing Frieda (Zeng Xiao Ping)",
+                    "L Somasundaram",
+                    "Redzwan Hafidz Abdul Razak",
+                    "Sim Tian Hock (Shen TianFu)"
+                ]
+            }
+        ]
+    },
+    "Jurong": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 95228,
+                "vote_percentage": 0.7929,
+                "candidates": [
+                    "Ang Wei Neng",
+                    "Desmond Lee",
+                    "Rahayu Binte Mahzam",
+                    "Tharman Shanmugaratnam",
+                    "Tan Wu Meng"
+                ]
+            },
+            {
+                "party": "SGF",
+                "vote_count": 24869,
+                "vote_percentage": 0.2071,
+                "candidates": [
+                    "Foo Ming Jin David",
+                    "Sukdeu Singh",
+                    "Tan Peng Aann",
+                    "Wong Chee Wai",
+                    "Wong Soon Hong"
+                ]
+            }
+        ]
+    },
+    "Macpherson": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 17251,
+                "vote_percentage": 0.656,
+                "candidates": [
+                    "Tin Pei Ling"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 8833,
+                "vote_percentage": 0.3359,
+                "candidates": [
+                    "Chen JiaXi"
+                ]
+            },
+            {
+                "party": "NSP",
+                "vote_count": 215,
+                "vote_percentage": 0.0082,
+                "candidates": [
+                    "Cheo Chai Chen"
+                ]
+            }
+        ]
+    },
+    "Marine Parade": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 85138,
+                "vote_percentage": 0.6407,
+                "candidates": [
+                    "Fatimah Binte Abdul Lateef",
+                    "Goh Chok Tong",
+                    "Seah Kian Peng",
+                    "Tan Chuan-Jin",
+                    "Tong Chun Fai Edwin Charles"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 47753,
+                "vote_percentage": 0.3593,
+                "candidates": [
+                    "Firuz Khan",
+                    "He Tingru",
+                    "Ng Foo Eng",
+                    "Terence Tan",
+                    "Yee Jenn Jong"
+                ]
+            }
+        ]
+    },
+    "Marsiling-Yew Tee": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 68546,
+                "vote_percentage": 0.6873,
+                "candidates": [
+                    "Halimah Yacob",
+                    "Ong Teng Koon",
+                    "Lawrence Wong",
+                    "Alex Yam Ziming"
+                ]
+            },
+            {
+                "party": "SDP",
+                "vote_count": 31185,
+                "vote_percentage": 0.3127,
+                "candidates": [
+                    "Damanhuri Bin Abas",
+                    "Lim Boon Heng",
+                    "Tan Liang Joo John",
+                    "Wong Souk Yee"
+                ]
+            }
+        ]
+    },
+    "Mountbatten": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 15331,
+                "vote_percentage": 0.7186,
+                "candidates": [
+                    "Lim Biow Chuan"
+                ]
+            },
+            {
+                "party": "SPP",
+                "vote_count": 6004,
+                "vote_percentage": 0.2814,
+                "candidates": [
+                    "Jeannette Chong - Aruldoss"
+                ]
+            }
+        ]
+    },
+    "Nee Soon": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 82287,
+                "vote_percentage": 0.6683,
+                "candidates": [
+                    "K Shanmugam",
+                    "Kwek Hian Chuan",
+                    "Lee Bee Wah",
+                    "Muhammad Faishal Ibrahim",
+                    "Ng Kok Kwang Louis"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 40841,
+                "vote_percentage": 0.3317,
+                "candidates": [
+                    "Foo Seck Guan",
+                    "Gurmit Singh S/O Sadhu Singh",
+                    "Koh Tiong Yee",
+                    "Cheryl Loh Xiu Wen",
+                    "Ron Tan Jun Yen"
+                ]
+            }
+        ]
+    },
+    "Pasir Ris-Punggol": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 125166,
+                "vote_percentage": 0.7289,
+                "candidates": [
+                    "Janil Puthucheary",
+                    "Ng Chee Meng",
+                    "Sun XueLing",
+                    "Teo Chee Hean",
+                    "Teo Ser Luck",
+                    "Zainal Bin Sapari"
+                ]
+            },
+            {
+                "party": "SDA",
+                "vote_count": 46550,
+                "vote_percentage": 0.2711,
+                "candidates": [
+                    "Abu Bin Mohamed",
+                    "Harminder Pal Singh S/O Gurcharan Singh",
+                    "Lim Bak Chuan Desmond",
+                    "Lim Tung Hee Arthero",
+                    "Ong Teik Seng",
+                    "Wong Way Weng"
+                ]
+            }
+        ]
+    },
+    "Pioneer": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 18017,
+                "vote_percentage": 0.7635,
+                "candidates": [
+                    "Cedric Foo Chee Keng"
+                ]
+            },
+            {
+                "party": "NSP",
+                "vote_count": 5581,
+                "vote_percentage": 0.2365,
+                "candidates": [
+                    "Ong Beng Soon Elvin"
+                ]
+            }
+        ]
+    },
+    "Potong Pasir": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 10602,
+                "vote_percentage": 0.6639,
+                "candidates": [
+                    "Sitoh Yih Pin"
+                ]
+            },
+            {
+                "party": "SPP",
+                "vote_count": 5368,
+                "vote_percentage": 0.3361,
+                "candidates": [
+                    "Loh Woon Lee Lina"
+                ]
+            }
+        ]
+    },
+    "Punggol East": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 16977,
+                "vote_percentage": 0.5177,
+                "candidates": [
+                    "Charles Chong You Fook"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 15818,
+                "vote_percentage": 0.4823,
+                "candidates": [
+                    "Lee Li Lian"
+                ]
+            }
+        ]
+    },
+    "Radin Mas": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 20246,
+                "vote_percentage": 0.7725,
+                "candidates": [
+                    "Tan Chin Siong"
+                ]
+            },
+            {
+                "party": "RP",
+                "vote_count": 3333,
+                "vote_percentage": 0.1272,
+                "candidates": [
+                    "Kumar S/O Appavoo"
+                ]
+            },
+            {
+                "party": "Independent",
+                "vote_count": 2630,
+                "vote_percentage": 0.1003,
+                "candidates": [
+                    "Han Hui Hui"
+                ]
+            }
+        ]
+    },
+    "Sembawang": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 96718,
+                "vote_percentage": 0.7228,
+                "candidates": [
+                    "Amrin Amin",
+                    "Khaw Boon Wan",
+                    "Lim Wee Kiak",
+                    "Ong Ye Kung",
+                    "Vikram Nair"
+                ]
+            },
+            {
+                "party": "NSP",
+                "vote_count": 37087,
+                "vote_percentage": 0.2772,
+                "candidates": [
+                    "Abdul Rasheed S/O Y Abdul Kuthus",
+                    "Lim Tong Zhen",
+                    "Ng Chung Hon",
+                    "Yadzeth Bin Hairis",
+                    "Yeo Ren-Yuan"
+                ]
+            }
+        ]
+    },
+    "Sengkang West": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 17586,
+                "vote_percentage": 0.6213,
+                "candidates": [
+                    "Lam Pin Min"
+                ]
+            },
+            {
+                "party": "WP",
+                "vote_count": 10721,
+                "vote_percentage": 0.3787,
+                "candidates": [
+                    "Koh Choong Yong"
+                ]
+            }
+        ]
+    },
+    "Tampines": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 95305,
+                "vote_percentage": 0.7207,
+                "candidates": [
+                    "Baey Yam Keng",
+                    "Cheng Li Hui",
+                    "Desmond Choo Pey Ching",
+                    "Heng Swee Keat",
+                    "Masagos Zulkifli"
+                ]
+            },
+            {
+                "party": "NSP",
+                "vote_count": 36943,
+                "vote_percentage": 0.2793,
+                "candidates": [
+                    "Choong Hon Heng",
+                    "Fong Chin Leong",
+                    "Lim Tean",
+                    "Nor Lella Mardiiiah Bte Mohmed",
+                    "Teo Kway Huang Sebastian"
+                ]
+            }
+        ]
+    },
+    "Tanjong Pagar": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 90635,
+                "vote_percentage": 0.7771,
+                "candidates": [
+                    "Chan Chun Sing",
+                    "Chia Shi-Lu",
+                    "Indranee Thurai Rajah",
+                    "Joan Pereira",
+                    "Melvin Yong Yik Chye"
+                ]
+            },
+            {
+                "party": "SGF",
+                "vote_count": 25998,
+                "vote_percentage": 0.2229,
+                "candidates": [
+                    "Ang Yong Guan",
+                    "Chirag Praful Desai",
+                    "Chiu Weng Hoe Melvyn",
+                    "Mohamad Fahmi Bin Ahmad Rais",
+                    "Tan Jee Say"
+                ]
+            }
+        ]
+    },
+    "West Coast": {
+        "type": "GRC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 71214,
+                "vote_percentage": 0.7857,
+                "candidates": [
+                    "Foo Mee Har",
+                    "Lim Hng Kiang",
+                    "Siswaran",
+                    "Patrick Tay Teck Guan"
+                ]
+            },
+            {
+                "party": "RP",
+                "vote_count": 19426,
+                "vote_percentage": 0.2143,
+                "candidates": [
+                    "Kenneth Andrew Jeyaretnam",
+                    "Noraini Bte Yunus",
+                    "Soh Guan Soon",
+                    "Zhu LaiCheng"
+                ]
+            }
+        ]
+    },
+    "Yuhua": {
+        "type": "SMC",
+        "parties": [
+            {
+                "party": "PAP",
+                "vote_count": 15324,
+                "vote_percentage": 0.7355,
+                "candidates": [
+                    "Grace Fu Hai Yien"
+                ]
+            },
+            {
+                "party": "SDP",
+                "vote_count": 5512,
+                "vote_percentage": 0.2645,
+                "candidates": [
+                    "Go Hui Leng"
+                ]
+            }
+        ]
+    }
+}

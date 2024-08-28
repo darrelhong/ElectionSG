@@ -1,0 +1,57 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"Hougang","ED_DESC":"HOUGANG","ED_CODE":"HG","INC_CRC":"A6F85B435F5CDA8D","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.89277,1.36692]}}
+,
+{"type":"Feature","properties":{"Name":"Hong Kah North","ED_DESC":"HONG KAH NORTH","ED_CODE":"HN","INC_CRC":"F260F1DF2EAA33A9","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.7287,1.36229]}}
+,
+{"type":"Feature","properties":{"Name":"Holland-Bukit Timah","ED_DESC":"HOLLAND-BUKIT TIMAH","ED_CODE":"HT","INC_CRC":"59D1ADB532F37979","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.79141,1.36131]}}
+,
+{"type":"Feature","properties":{"Name":"Jalan Besar","ED_DESC":"JALAN BESAR","ED_CODE":"JB","INC_CRC":"8AAA8D073282E2E6","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.86268,1.28721]}}
+,
+{"type":"Feature","properties":{"Name":"Nee Soon","ED_DESC":"NEE SOON","ED_CODE":"NS","INC_CRC":"25F3166BC211880E","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.82902,1.41503]}}
+,
+{"type":"Feature","properties":{"Name":"Punggol East","ED_DESC":"PUNGGOL EAST","ED_CODE":"PE","INC_CRC":"8298D32B826A5881","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.9053,1.38804]}}
+,
+{"type":"Feature","properties":{"Name":"Pioneer","ED_DESC":"PIONEER","ED_CODE":"PI","INC_CRC":"20CC8109497AD9FE","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.70262,1.33872]}}
+,
+{"type":"Feature","properties":{"Name":"Pasir Ris-Punggol","ED_DESC":"PASIR RIS-PUNGGOL","ED_CODE":"PN","INC_CRC":"1646C06CB471D092","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.91469,1.3979]}}
+,
+{"type":"Feature","properties":{"Name":"Potong Pasir","ED_DESC":"POTONG PASIR","ED_CODE":"PS","INC_CRC":"832012FC80E7D8A9","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.86733,1.33604]}}
+,
+{"type":"Feature","properties":{"Name":"Radin Mas","ED_DESC":"RADIN MAS","ED_CODE":"RM","INC_CRC":"B1220945C87333A0","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.82016,1.2746]}}
+,
+{"type":"Feature","properties":{"Name":"Sembawang","ED_DESC":"SEMBAWANG","ED_CODE":"SB","INC_CRC":"2616C870ECA08891","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.81755,1.44843]}}
+,
+{"type":"Feature","properties":{"Name":"Sengkang West","ED_DESC":"SENGKANG WEST","ED_CODE":"SW","INC_CRC":"54C1042ECE7C5B33","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.88572,1.39396]}}
+,
+{"type":"Feature","properties":{"Name":"Tampines","ED_DESC":"TAMPINES","ED_CODE":"TM","INC_CRC":"69B6EC9DC1F9545F","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.94145,1.3569]}}
+,
+{"type":"Feature","properties":{"Name":"Tanjong Pagar","ED_DESC":"TANJONG PAGAR","ED_CODE":"TP","INC_CRC":"E2F2C4995BA6A36D","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.82444,1.30004]}}
+,
+{"type":"Feature","properties":{"Name":"West Coast","ED_DESC":"WEST COAST","ED_CODE":"WE","INC_CRC":"F4D7255652CDEB2F","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.69418,1.26492]}}
+,
+{"type":"Feature","properties":{"Name":"Yuhua","ED_DESC":"YUHUA","ED_CODE":"YH","INC_CRC":"F53D5507C8899036","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.74042,1.33835]}}
+,
+{"type":"Feature","properties":{"Name":"Jurong","ED_DESC":"JURONG","ED_CODE":"JR","INC_CRC":"A0E59043D5F18D9A","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.7584,1.3314]}}
+,
+{"type":"Feature","properties":{"Name":"Marine Parade","ED_DESC":"MARINE PARADE","ED_CODE":"MA","INC_CRC":"BA31A3CAE8CBD484","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.90703,1.31803]}}
+,
+{"type":"Feature","properties":{"Name":"Mountbatten","ED_DESC":"MOUNTBATTEN","ED_CODE":"MB","INC_CRC":"7CF1B668F700B4E2","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.91597,1.27391]}}
+,
+{"type":"Feature","properties":{"Name":"Macpherson","ED_DESC":"MACPHERSON","ED_CODE":"MP","INC_CRC":"52B177763050C78E","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.886,1.32405]}}
+,
+{"type":"Feature","properties":{"Name":"Marsiling-Yew Tee","ED_DESC":"MARSILING-YEW TEE","ED_CODE":"MY","INC_CRC":"EE071450B9234645","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.76593,1.42622]}}
+,
+{"type":"Feature","properties":{"Name":"Aljunied","ED_DESC":"ALJUNIED","ED_CODE":"AJ","INC_CRC":"CBCC7F0D202A808B","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.90584,1.35561]}}
+,
+{"type":"Feature","properties":{"Name":"Ang Mo Kio","ED_DESC":"ANG MO KIO","ED_CODE":"AM","INC_CRC":"D70FD12F115B988C","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.86823,1.3929]}}
+,
+{"type":"Feature","properties":{"Name":"Bukit Batok","ED_DESC":"BUKIT BATOK","ED_CODE":"BK","INC_CRC":"C9C672B0A67B7DF4","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.74746,1.34746]}}
+,
+{"type":"Feature","properties":{"Name":"Bukit Panjang","ED_DESC":"BUKIT PANJANG","ED_CODE":"BP","INC_CRC":"0666283E37C18BEE","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.77201,1.37748]}}
+,
+{"type":"Feature","properties":{"Name":"Bishan-Toa Payoh","ED_DESC":"BISHAN-TOA PAYOH","ED_CODE":"BS","INC_CRC":"9E70272EC26EC52A","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.83797,1.34409]}}
+,
+{"type":"Feature","properties":{"Name":"Chua Chu Kang","ED_DESC":"CHUA CHU KANG","ED_CODE":"CK","INC_CRC":"BC7AFC6C8D8A94A6","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.70661,1.38642]}}
+,
+{"type":"Feature","properties":{"Name":"East Coast","ED_DESC":"EAST COAST","ED_CODE":"EC","INC_CRC":"0DFCD71FD5618CFC","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.99194,1.36483]}}
+,
+{"type":"Feature","properties":{"Name":"Fengshan","ED_DESC":"FENGSHAN","ED_CODE":"FS","INC_CRC":"B5E00D6BEB532F82","FMEL_UPD_D":20150916151419},"geometry":{"type":"Point","coordinates":[103.94271,1.33066]}}]}
