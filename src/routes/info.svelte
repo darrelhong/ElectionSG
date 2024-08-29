@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Select from '$lib/components/select.svelte';
-	import { selectedDivision, selectedYearOption, selectedYear } from '$lib/stores';
+	import { selectedDivision, selectedYearOption, selectedYear, years } from '$lib/stores';
 	import { getParsedResults } from '$lib/parsed';
 	import Button from '$lib/components/button.svelte';
 
@@ -48,9 +48,14 @@
 						</p>
 
 						<p>
-							<span class="font-medium">Votes:</span>
-							<span>{party.vote_count.toLocaleString('en-SG')}</span>
-							<span>({(party.vote_percentage * 100).toFixed(2)}%)</span>
+							{#if party.vote_percentage && party.vote_count}
+								<span class="font-medium">Votes:</span>
+								<span>{party.vote_count?.toLocaleString('en-SG')}</span>
+								<span>({(party.vote_percentage * 100).toFixed(2)}%)</span>
+							{:else}
+								<span class="font-medium">Result:</span>
+								<span>Uncontested Walkover</span>
+							{/if}
 						</p>
 					</div>
 				{/each}
@@ -61,7 +66,7 @@
 
 		<Select
 			createSelectOptions={{ selected: selectedYearOption }}
-			items={['2015', '2020']}
+			items={Array.from(years).reverse()}
 			placeholder="Select year"
 		/>
 	</div>

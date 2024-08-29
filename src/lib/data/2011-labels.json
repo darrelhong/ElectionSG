@@ -1,0 +1,464 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Radin Mas",
+                "ED_CODE": "RM",
+                "ED_DESC": "RADIN MAS",
+                "INC_CRC": "8E2B2D15A5D5C84B",
+                "FMEL_UPD_D": 20110302185700
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.82016,
+                    1.2746
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Marine Parade",
+                "ED_CODE": "MA",
+                "ED_DESC": "MARINE PARADE",
+                "INC_CRC": "48CEE3816B196033",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.90284,
+                    1.32036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Moulmein-Kallang",
+                "ED_CODE": "MK",
+                "ED_DESC": "MOULMEIN-KALLANG",
+                "INC_CRC": "F97738CAC51A3252",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.85406,
+                    1.31021
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Joo Chiat",
+                "ED_CODE": "JC",
+                "ED_DESC": "JOO CHIAT",
+                "INC_CRC": "A979E1D4D41E0649",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.92209,
+                    1.31186
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "West Coast",
+                "ED_CODE": "WE",
+                "ED_DESC": "WEST COAST",
+                "INC_CRC": "FCB8DF99D6999576",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.6938,
+                    1.26535
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Tanjong Pagar",
+                "ED_CODE": "TP",
+                "ED_DESC": "TANJONG PAGAR",
+                "INC_CRC": "8E5D5E18BA582B1C",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.87754,
+                    1.24064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Whampoa",
+                "ED_CODE": "WP",
+                "ED_DESC": "WHAMPOA",
+                "INC_CRC": "193B5BC2F114E3B3",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.85692,
+                    1.32442
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Potong Pasir",
+                "ED_CODE": "PS",
+                "ED_DESC": "POTONG PASIR",
+                "INC_CRC": "653E9FDA6F65DD81",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.86773,
+                    1.33569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Hong Kah North",
+                "ED_CODE": "HN",
+                "ED_DESC": "HONG KAH NORTH",
+                "INC_CRC": "01C39383CFCB8371",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.7287,
+                    1.36229
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Yuhua",
+                "ED_CODE": "YH",
+                "ED_DESC": "YUHUA",
+                "INC_CRC": "FC2A896E6E21FDED",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.74042,
+                    1.33834
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Tampines",
+                "ED_CODE": "TM",
+                "ED_DESC": "TAMPINES",
+                "INC_CRC": "102E25C2C18ABD26",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.94145,
+                    1.3569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "East Coast",
+                "ED_CODE": "EC",
+                "ED_DESC": "EAST COAST",
+                "INC_CRC": "21639CF0771F1F68",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.99023,
+                    1.36473
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bishan-Toa Payoh",
+                "ED_CODE": "BS",
+                "ED_DESC": "BISHAN-TOA PAYOH",
+                "INC_CRC": "B30D614A16086E2C",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.84304,
+                    1.34786
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Ang Mo Kio",
+                "ED_CODE": "AM",
+                "ED_DESC": "ANG MO KIO",
+                "INC_CRC": "8D9DEA77B5F0C466",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.85944,
+                    1.39335
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Hougang",
+                "ED_CODE": "HG",
+                "ED_DESC": "HOUGANG",
+                "INC_CRC": "4CF75C2ED73557A7",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.8936,
+                    1.36778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Pasir Ris-Punggol",
+                "ED_CODE": "PN",
+                "ED_DESC": "PASIR RIS-PUNGGOL",
+                "INC_CRC": "197F19B453F03939",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.91475,
+                    1.39472
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Aljunied",
+                "ED_CODE": "AJ",
+                "ED_DESC": "ALJUNIED",
+                "INC_CRC": "3312D436FE25BD4E",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.90585,
+                    1.35561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bukit Panjang",
+                "ED_CODE": "BP",
+                "ED_DESC": "BUKIT PANJANG",
+                "INC_CRC": "35FFF844CF3301D7",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.77201,
+                    1.37749
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Punggol East",
+                "ED_CODE": "PE",
+                "ED_DESC": "PUNGGOL EAST",
+                "INC_CRC": "356BEE0E09D40F3B",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.90531,
+                    1.38802
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sengkang West",
+                "ED_CODE": "SW",
+                "ED_DESC": "SENGKANG WEST",
+                "INC_CRC": "48191D737EE36985",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.8824,
+                    1.39395
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Chua Chu Kang",
+                "ED_CODE": "CK",
+                "ED_DESC": "CHUA CHU KANG",
+                "INC_CRC": "1019DBCF8388C457",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.71163,
+                    1.39044
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Nee Soon",
+                "ED_CODE": "NS",
+                "ED_DESC": "NEE SOON",
+                "INC_CRC": "EDD2E7DFCB3551CD",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.82995,
+                    1.43121
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Holland-Bukit Timah",
+                "ED_CODE": "HT",
+                "ED_DESC": "HOLLAND-BUKIT TIMAH",
+                "INC_CRC": "8DD6266BE3C75EE4",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.7899,
+                    1.36663
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sembawang",
+                "ED_CODE": "SB",
+                "ED_DESC": "SEMBAWANG",
+                "INC_CRC": "A64BE7601953CD45",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.81111,
+                    1.44946
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Mountbatten",
+                "ED_CODE": "MB",
+                "ED_DESC": "MOUNTBATTEN",
+                "INC_CRC": "FD68F058C8F92F4C",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.91597,
+                    1.27391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Pioneer",
+                "ED_CODE": "PI",
+                "ED_DESC": "PIONEER",
+                "INC_CRC": "06B1F354BB297543",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.70145,
+                    1.33864
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Jurong",
+                "ED_CODE": "JR",
+                "ED_DESC": "JURONG",
+                "INC_CRC": "AC0E84D971DD33E5",
+                "FMEL_UPD_D": 20110302185705
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.73865,
+                    1.33815
+                ]
+            }
+        }
+    ]
+}

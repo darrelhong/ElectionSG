@@ -206,15 +206,21 @@ export function addResultFillLayer(map: maplibregl.Map) {
 			source: BOUNDARY_SOURCE,
 			paint: {
 				'fill-color': [
-					'interpolate',
-					['linear'],
-					['feature-state', 'incumbentVotePercentage'],
-					0,
-					'#FF6600',
-					0.5,
-					'#ffffff',
-					1,
-					'#0099FF'
+					'case',
+					// @ts-expect-error null works but not recognized by types
+					['==', ['feature-state', 'incumbentVotePercentage'], null],
+					'#0099FF',
+					[
+						'interpolate',
+						['linear'],
+						['feature-state', 'incumbentVotePercentage'],
+						0,
+						'#FF6600',
+						0.5,
+						'#ffffff',
+						1,
+						'#0099FF'
+					]
 				],
 				'fill-opacity': 0.6
 			}

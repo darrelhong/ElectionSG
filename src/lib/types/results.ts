@@ -5,8 +5,8 @@ const Result = z.object({
 	parties: z.array(
 		z.object({
 			party: z.string(),
-			vote_count: z.number(),
-			vote_percentage: z.number(),
+			vote_count: z.number().or(z.null()),
+			vote_percentage: z.number().or(z.null()),
 			candidates: z.array(z.string())
 		})
 	)
