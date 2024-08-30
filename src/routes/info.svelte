@@ -51,7 +51,7 @@
 							{#if party.vote_percentage && party.vote_count}
 								<span class="font-medium">Votes:</span>
 								<span>{party.vote_count?.toLocaleString('en-SG')}</span>
-								<span>({(party.vote_percentage * 100).toFixed(2)}%)</span>
+								<span class="font-bold">({(party.vote_percentage * 100).toFixed(2)}%)</span>
 							{:else}
 								<span class="font-medium">Result:</span>
 								<span>Uncontested Walkover</span>
