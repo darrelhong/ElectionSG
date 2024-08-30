@@ -1,11 +1,13 @@
 import results2020 from '$lib/data/2020-results.json';
 import results2015 from '$lib/data/2015-results.json';
 import results2011 from '$lib/data/2011-results.json';
+import results2006 from '$lib/data/2006-results.json';
 import { Results } from '$lib/types/results';
 
 const parsedResults2020 = Results.parse(results2020);
 const parsedResults2015 = Results.parse(results2015);
 const parsedResults2011 = Results.parse(results2011);
+const parsedResults2006 = Results.parse(results2006);
 
 export const getParsedResults = (year: string) => {
 	switch (year) {
@@ -15,6 +17,8 @@ export const getParsedResults = (year: string) => {
 			return parsedResults2015;
 		case '2011':
 			return parsedResults2011;
+		case '2006':
+			return parsedResults2006;
 		default:
 			return parsedResults2020;
 	}
