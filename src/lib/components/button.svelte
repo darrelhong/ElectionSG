@@ -2,6 +2,7 @@
 	import clsx from 'clsx';
 	import { cva, type VariantProps } from 'class-variance-authority';
 	import type { HTMLButtonAttributes } from 'svelte/elements';
+	import { emptyMeltElement, melt, type AnyMeltElement } from '@melt-ui/svelte';
 
 	const button = cva(
 		clsx(
@@ -20,9 +21,16 @@
 			}
 		}
 	);
-	interface $$Props extends HTMLButtonAttributes, VariantProps<typeof button> {}
+	interface $$Props extends HTMLButtonAttributes, VariantProps<typeof button> {
+		element?: AnyMeltElement;
+	}
 
+	export let element: $$Props['element'] = undefined;
 	export let variant: $$Props['variant'] = 'default';
+
+	$: meltElement = element ?? emptyMeltElement;
 </script>
 
-<button {...$$props} class={button({ variant, class: $$props.class })}><slot /></button>
+<button {...$$props} class={button({ variant, class: $$props.class })} use:melt={$meltElement}
+	><slot /></button
+>
