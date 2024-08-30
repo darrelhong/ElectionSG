@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { flyAndScale } from '$lib/transition';
 	import { type CreateSelectProps, createSelect, melt } from '@melt-ui/svelte';
 	import clsx from 'clsx';
 	import { fade } from 'svelte/transition';
@@ -10,7 +11,7 @@
 	const {
 		elements: { trigger, menu, option },
 		states: { selectedLabel, open }
-	} = createSelect(createSelectOptions);
+	} = createSelect({ forceVisible: true, ...createSelectOptions });
 </script>
 
 <button
@@ -45,7 +46,6 @@
 {#if $open}
 	<div
 		use:melt={$menu}
-		transition:fade={{ duration: 100 }}
 		class={clsx(
 			'flex max-h-64 flex-col',
 			'overflow-y-auto',
@@ -53,6 +53,7 @@
 			'bg-white',
 			'p-1'
 		)}
+		transition:flyAndScale={{ duration: 150, y: 8, start: 0.96 }}
 	>
 		{#each items as item}
 			<div
