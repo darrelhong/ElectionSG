@@ -72,13 +72,20 @@
 
 				<div class="mt-auto flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
 					<Button class="mt-4">Report issue</Button>
-					<p class="text-xs text-gray-600">
-						<a href="https://maplibre.org/" target="_blank">MapLibre</a>
-						| © <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> ©
-						<a href="https://www.openstreetmap.org/copyright" target="_blank"
-							>OpenStreetMap contributors</a
-						>
-					</p>
+					<div>
+						<p class="text-xs text-gray-600">
+							Data: <a href="https://www.eld.gov.sg/homepage.html" target="_blank"
+								>Elections Department Singapore</a
+							>
+						</p>
+						<p class="text-xs text-gray-600">
+							<a href="https://maplibre.org/" target="_blank">MapLibre</a>
+							| © <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> ©
+							<a href="https://www.openstreetmap.org/copyright" target="_blank"
+								>OpenStreetMap contributors</a
+							>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
