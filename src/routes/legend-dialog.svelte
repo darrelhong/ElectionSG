@@ -71,7 +71,12 @@
 				</div>
 
 				<div class="mt-auto flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
-					<Button class="mt-4">Report issue</Button>
+					<Button
+						as="a"
+						class="mt-4"
+						href="https://github.com/darrelhong/ElectionSG"
+						target="_blank">Report issue / Request feature</Button
+					>
 					<div>
 						<p class="text-xs text-gray-600">
 							Data: <a href="https://www.eld.gov.sg/homepage.html" target="_blank"
