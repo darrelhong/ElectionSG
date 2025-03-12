@@ -243,6 +243,12 @@ export function switchDataSourceOnChange(map: maplibregl.Map) {
 
 export function mergeResultsWithFeatureState(map: maplibregl.Map) {
 	const results = getParsedResults(get(selectedYear));
+
+	if (!results) {
+		map.setPaintProperty('result-fill-layer', 'fill-opacity', 0);
+		return;
+	}
+
 	Object.entries(results).forEach(([divisionName, results]) => {
 		// PAP competes in all divisions
 		const incumbentResult = results.parties.find((party) => party.party === 'PAP');
@@ -257,4 +263,5 @@ export function mergeResultsWithFeatureState(map: maplibregl.Map) {
 			}
 		);
 	});
+	map.setPaintProperty('result-fill-layer', 'fill-opacity', 0.6);
 }
