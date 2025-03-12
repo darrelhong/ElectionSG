@@ -20,6 +20,6 @@ export const getParsedResults = (year: string) => {
 		case '2006':
 			return parsedResults2006;
 		default:
-			return parsedResults2020;
+			return null;
 	}
 };

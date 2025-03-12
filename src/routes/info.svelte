@@ -6,7 +6,7 @@
 	import LegendDialog from './legend-dialog.svelte';
 	import CloseIcon from '$lib/icons/close-icon.svelte';
 
-	$: divisionResults = $selectedDivision && getParsedResults($selectedYear)[$selectedDivision];
+	$: divisionResults = $selectedDivision && getParsedResults($selectedYear)?.[$selectedDivision];
 </script>
 
 <div class="pointer-events-none fixed inset-0 grid items-end p-2">

@@ -1,0 +1,170 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": { "Name": "Jurong East-Bukit Batok" },
+			"geometry": { "type": "Point", "coordinates": [103.75085, 1.33659] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "West Coast-Jurong West" },
+			"geometry": { "type": "Point", "coordinates": [103.70357, 1.2625] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Kebun Baru" },
+			"geometry": { "type": "Point", "coordinates": [103.82609, 1.3819] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Yio Chu Kang" },
+			"geometry": { "type": "Point", "coordinates": [103.83821, 1.38282] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Queenstown" },
+			"geometry": { "type": "Point", "coordinates": [103.80645, 1.29089] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Tanjong Pagar" },
+			"geometry": { "type": "Point", "coordinates": [103.81571, 1.29578] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Radin Mas" },
+			"geometry": { "type": "Point", "coordinates": [103.83147, 1.24775] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Potong Pasir" },
+			"geometry": { "type": "Point", "coordinates": [103.87229, 1.33379] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Punggol" },
+			"geometry": { "type": "Point", "coordinates": [103.90947, 1.40426] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Jalan Kayu" },
+			"geometry": { "type": "Point", "coordinates": [103.86861, 1.40786] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Aljunied" },
+			"geometry": { "type": "Point", "coordinates": [103.89904, 1.35496] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Ang Mo Kio" },
+			"geometry": { "type": "Point", "coordinates": [103.86447, 1.37621] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Bukit Gombak" },
+			"geometry": { "type": "Point", "coordinates": [103.75921, 1.35687] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Chua Chu Kang" },
+			"geometry": { "type": "Point", "coordinates": [103.70572, 1.38922] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Holland-Bukit Timah" },
+			"geometry": { "type": "Point", "coordinates": [103.78929, 1.36193] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Jurong Central" },
+			"geometry": { "type": "Point", "coordinates": [103.72771, 1.34821] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Jalan Besar" },
+			"geometry": { "type": "Point", "coordinates": [103.85448, 1.29863] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Pioneer" },
+			"geometry": { "type": "Point", "coordinates": [103.70077, 1.33866] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Marymount" },
+			"geometry": { "type": "Point", "coordinates": [103.84261, 1.35698] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Bishan-Toa Payoh" },
+			"geometry": { "type": "Point", "coordinates": [103.8327, 1.34664] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Hougang" },
+			"geometry": { "type": "Point", "coordinates": [103.89483, 1.36891] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Bukit Panjang" },
+			"geometry": { "type": "Point", "coordinates": [103.77283, 1.37602] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Sengkang" },
+			"geometry": { "type": "Point", "coordinates": [103.89669, 1.38973] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Marsiling-Yew Tee" },
+			"geometry": { "type": "Point", "coordinates": [103.76625, 1.4214] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Nee Soon" },
+			"geometry": { "type": "Point", "coordinates": [103.83144, 1.42529] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Sembawang West" },
+			"geometry": { "type": "Point", "coordinates": [103.79841, 1.44409] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Tampines Changkat" },
+			"geometry": { "type": "Point", "coordinates": [103.94954, 1.3459] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Mountbatten" },
+			"geometry": { "type": "Point", "coordinates": [103.88344, 1.29723] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Sembawang" },
+			"geometry": { "type": "Point", "coordinates": [103.80693, 1.44892] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "East Coast" },
+			"geometry": { "type": "Point", "coordinates": [103.94293, 1.32453] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Marine Parade-Braddell Heights" },
+			"geometry": { "type": "Point", "coordinates": [103.89266, 1.32649] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Tampines" },
+			"geometry": { "type": "Point", "coordinates": [103.93712, 1.36013] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "Name": "Pasir Ris-Changi" },
+			"geometry": { "type": "Point", "coordinates": [104.00812, 1.37863] }
+		}
+	]
+}

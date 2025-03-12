@@ -1,7 +1,9 @@
+import geojson2025 from '$lib/data/2025-boundaries.json';
 import geojson2020 from '$lib/data/2020-boundaries.json';
 import geojson2015 from '$lib/data/2015-boundaries.json';
 import geojson2011 from '$lib/data/2011-boundaries.json';
 import geojson2006 from '$lib/data/2006-boundaries.json';
+import geojson2025labels from '$lib/data/2025-labels.json';
 import geojson2020labels from '$lib/data/2020-labels.json';
 import geojson2015labels from '$lib/data/2015-labels.json';
 import geojson2011labels from '$lib/data/2011-labels.json';
@@ -9,6 +11,8 @@ import geojson2006labels from '$lib/data/2006-labels.json';
 
 export function getBoundaryJson(year: string) {
 	switch (year) {
+		case '2025':
+			return geojson2025 as GeoJSON.GeoJSON;
 		case '2020':
 			return geojson2020 as GeoJSON.GeoJSON;
 		case '2015':
@@ -24,6 +28,8 @@ export function getBoundaryJson(year: string) {
 
 export function getLabelsJson(year: string) {
 	switch (year) {
+		case '2025':
+			return geojson2025labels as GeoJSON.GeoJSON;
 		case '2020':
 			return geojson2020labels as GeoJSON.GeoJSON;
 		case '2015':
